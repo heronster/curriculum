@@ -61,7 +61,7 @@ localStorage.clear();
 
 If you try to store data with the same key, the old values will be overwritten.
 
-It is important to know that the data in `localStorage` is specific to the protocol of the page. What this basically means is that every webpage will have a different `localStorage`.
+It is important to know that the data in `localStorage` is specific to the protocol+hostname+non-standard-port of the page. What this basically means is that every website will have a different `localStorage`.
 
 Now that you've learned what `localStorage` is, you might be wondering why you would use this instead of using cookies. Cookies are mainly used for reading server-side, while `localStore` can only be read by the client-side. With this said, you can view `localStorage` as an improvement on cookies, mainly because the available size for `localStorage` is 5MB while a cookie's maximum size is typically 4KB. Lastly, the data in `localStorage` is not sent back to the server for every HTTP request.
 
